@@ -23,3 +23,11 @@
 2. Συνδέσου στο [Railway](https://railway.app), επίλεξε **New Project → Deploy from GitHub Repo**.
 3. Στο Railway, στο tab **Variables**, βάλε όλα τα πεδία που έχει το `.env.example`.
 4. Στο Railway, Start Command ή Procfile:
+5. worker: python flight_deals_bot.py
+6. Κάνε Deploy. Δες τα Logs για επιβεβαίωση.
+7. Στείλε στο Telegram `/start` για δοκιμή.
+
+## Notes
+- Χρησιμοποιεί Amadeus **Test API** (`https://test.api.amadeus.com`).
+- Για Production χρειάζεται να αλλάξεις endpoint και να χρησιμοποιήσεις production API keys.
+- Μην ανεβάσεις το `.env` στο GitHub.
